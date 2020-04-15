@@ -18,3 +18,20 @@ export WORKON_HOME=/home/username/.virtualenvs
 export PROJECT_HOME=/home/username/Devel
 source /etc/profile.d/virtualenvwrapper.sh
 ```
+
+Install CUDA 18.04 docker image
+
+```
+docker run -it <image/tag> bash
+docker commit docker_id new/name
+docker attach docker_id
+```
+
+```
+add-apt-repository main
+apt install software-properties-common
+add-apt-repository ppa:graphics-drivers/ppa
+apt install dkms build-essential
+apt install ubuntu-drivers-common
+ubuntu-drivers devices
+```
