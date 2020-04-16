@@ -1,4 +1,4 @@
-# biolinux18
+# bioai1
 When you log in you enter your uio user place, to install stuff use
 `sudo yum install `
 Installing from source should be done in 
@@ -22,16 +22,22 @@ source /etc/profile.d/virtualenvwrapper.sh
 Install CUDA 18.04 docker image
 
 ```
+add-apt-repository main
+apt install software-properties-common
+apt install dkms build-essential
+apt install ubuntu-drivers-common
+ubuntu-drivers devices
+ubuntu-drivers autoinstall
+```
+
+```
 docker run -it <image/tag> bash
 docker commit docker_id new/name
 docker attach docker_id
 ```
 
+[Use cuda docker with tensorflow](https://www.tensorflow.org/install/docker)
+
 ```
-add-apt-repository main
-apt install software-properties-common
-add-apt-repository ppa:graphics-drivers/ppa
-apt install dkms build-essential
-apt install ubuntu-drivers-common
-ubuntu-drivers devices
+docker run -u $(id -u):$(id -g)
 ```
