@@ -5,9 +5,10 @@ To use python you can install with `pip install --user` or make your own virtual
 
 ```
 # virtualenvwrapper
-export WORKON_HOME=/home/username/.virtualenvs
-export PROJECT_HOME=/home/username/Devel
-source /etc/profile.d/virtualenvwrapper.sh
+export WORKON_HOME=~/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/home/username/.local/bin/virtualenv
+source /home/username/.local/bin/virtualenvwrapper.sh
 ```
 
 Install CUDA 18.04 docker image
