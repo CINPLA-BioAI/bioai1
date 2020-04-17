@@ -38,7 +38,7 @@ docker attach docker_id
 [Tensorflow docker images](https://hub.docker.com/r/tensorflow/tensorflow/)
 devel-gpu uses python 3.6
 ```
-docker run -u $(id -u):$(id -g) --gpus all -it tensorflow/tensorflow:devel-gpu bash
+docker run -u $(id -u):$(id -g) --gpus all -it tensorflow/tensorflow:latest-gpu-py3 bash
 ```
 [run tensorflow docker jupyter remotely](https://medium.com/@lucasrg/using-jupyter-notebook-running-on-a-remote-docker-container-via-ssh-ea2c3ebb9055)
 
