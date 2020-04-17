@@ -45,8 +45,8 @@ docker run -u $(id -u):$(id -g) --gpus all -it tensorflow/tensorflow:devel-gpu b
 Use `tensorflow/tensorflow:latest-gpu-py3`
 
 ```
-docker run --gpus all -it --rm -v $(realpath ~/projects):/projects -p 8888:8888 mikkel/tensorflow:latest-gpu-py3
-docker run --gpus all -it -v $(realpath ~/projects):/projects mikkel/tensorflow:latest-gpu-py3
+docker run --gpus all -it --rm -v $(realpath ~/projects):/projects -p 8888:8888 lepmik/tensorflow:latest-gpu-py3
+docker run --gpus all -it -v $(realpath ~/projects):/projects lepmik/tensorflow:latest-gpu-py3 bash
 ```
 in the docker:
 ```
