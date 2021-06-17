@@ -33,6 +33,8 @@ docker attach docker_id
 [install nvidia-docker](https://github.com/NVIDIA/nvidia-docker)
 [Use cuda docker with tensorflow](https://www.tensorflow.org/install/docker)
 
+
+
 [Use docker without sudo](https://docs.docker.com/engine/install/linux-postinstall/)
 
 [Tensorflow docker images](https://hub.docker.com/r/tensorflow/tensorflow/)
@@ -52,4 +54,12 @@ in the docker:
 ```
 cd projects
 jupyter lab --ip 0.0.0.0 --port 8888 --allow-root
+```
+## PyTorch
+https://ngc.nvidia.com/catalog/containers/nvidia:pytorch
+https://docs.nvidia.com/deeplearning/frameworks/pytorch-release-notes/running.html#running
+
+```
+docker pull nvcr.io/nvidia/pytorch:21.05-py3
+docker run --gpus all -it --rm nvcr.io/nvidia/pytorch:21.05-py3 bash
 ```
